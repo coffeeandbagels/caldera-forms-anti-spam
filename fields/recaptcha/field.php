@@ -81,7 +81,7 @@ ob_start();
 					obj.inst.validationResult = true;
 					cf_recaptcha_executed = true;
 					cf_form.submit();
-				});			
+				});
 			});
 		}
 		var cf_recaptcha_is_ready = function (){
@@ -109,3 +109,4 @@ ob_start();
 <?php
 $script_template = ob_get_clean();
 Caldera_Forms_Render_Util::add_inline_data( $script_template, $form );
+
